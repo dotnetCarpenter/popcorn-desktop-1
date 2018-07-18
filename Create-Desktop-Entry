@@ -10,7 +10,7 @@ create_desktop_entry() {
 	EXECUTABLE=$CURRENT_DIR/Popcorn-Time
 	ICON_PATH=$CURRENT_DIR/src/app/images/icon.png
 
-	DESTINATION_DIR=/home/$(whoami)/.local/share/applications
+	DESTINATION_DIR=/home/$(whoami)/.local/share
 	DESKTOP_FILE=$DESTINATION_DIR/popcorn-time.desktop
 
 	echo "[Desktop Entry]" > $DESKTOP_FILE

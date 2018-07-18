@@ -147,7 +147,7 @@ echo "Switched to $PWD"
 if [ "$rd_dep" = "yes" ]; then
 
     echo "Installing global dependencies"
-    if execsudo "npm install -g bower gulp gulp-cli"; then
+    if npm install -g bower gulp gulp-cli; then
         echo "Global dependencies installed successfully!"
     else
         echo "Global dependencies encountered an error while installing"
@@ -155,7 +155,7 @@ if [ "$rd_dep" = "yes" ]; then
     fi
 
     echo "Downloading Popcorn dependencies files"
-    if execsudo "wget -i popcorn_dependencies_files.txt"; then
+    if wget -i popcorn_dependencies_files.txt; then
         echo "Local Popcorn files downloaded successfully!"
         echo "Moving Popcorn local files"
         mv torrent_collection.js src/app/lib/views/torrent_collection.js
@@ -165,7 +165,7 @@ if [ "$rd_dep" = "yes" ]; then
     fi
 
     echo "Installing local dependencies"
-    if execsudo "npm install"; then
+    if npm install; then
         echo "Local dependencies installed successfully!"
     else
         echo "Local dependencies encountered an error while installing"

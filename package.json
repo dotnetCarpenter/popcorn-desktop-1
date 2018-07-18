@@ -59,6 +59,7 @@
     "mv": "2.x.x",
     "nedb": "1.8.0",
     "node-captions": "0.4.6",
+    "node-pre-gyp": "^0.10.3",
     "node-webkit-fdialogs": "latest",
     "opensubtitles-api": "4.0.0-rc1",
     "os-name": "2.0.1",
@@ -97,7 +98,7 @@
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.1.0",
     "nib": "^1.1.0",
-    "nw-builder": "^3.5.1",
+    "nw-builder": "^3.5.4",
     "run-sequence": "^1.1.5",
     "stylus": "^0.54.2",
     "yargs": "^6.4.0"
